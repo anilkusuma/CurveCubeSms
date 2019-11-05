@@ -1,0 +1,60 @@
+/*=================================================================================
+    Header
+====================================================================================*/
+#HeaderComponent nav {
+    height: 64px !important;
+}
+#HeaderComponent nav ul a {
+    padding: 0 20px;
+    height: 64px !important;
+}
+#HeaderComponent nav ul a:hover {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+}
+#HeaderComponent h1.logo-wrapper{
+    margin: 0px 0px;
+}
+#HeaderComponent header .brand-logo {
+    margin: 1px 0px;
+    padding: 0 20px;
+}
+#HeaderComponent header .brand-logo img{
+    width: 172px;
+}
+#HeaderComponent header .brand-logo img {
+    width: 200px !important;
+}
+#HeaderComponent .logo-wrapper img{
+    width: 800px;
+    height: 64px;
+}
+header .count-badge {
+    background-color: #ff0000;
+    color: #ffffff;
+    display: inline-block;
+    min-width: 10px;
+    padding: 3px 7px;
+    font-weight: bold;
+    line-height: 1;
+    vertical-align: baseline;
+    white-space: nowrap;
+    text-align: center;
+    border-radius: 10px;
+    margin-left: -5px;
+    position: absolute;
+    font-size: 13px;
+    top: 12px;
+    right: 12px;
+    margin-right: -5px;
+}
+@media only screen and (max-width: 992px) {
+    nav .nav-wrapper {
+        text-align: center;
+        height: 64px;
+        line-height: 64px;
+    }
+    nav .nav-wrapper a.page-title {
+        font-size: 36px;
+    }
+}
+

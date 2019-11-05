@@ -1,0 +1,20 @@
+.page-content {
+    padding-top: 10px;
+}
+
+#HomePage {
+    height:100vh;
+    overflow: hidden;
+}
+
+#HomePage #main {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+#HomePage .home-page-router-content {
+    flex: 1 0;
+    overflow-y: scroll;
+    margin: 10px;
+}

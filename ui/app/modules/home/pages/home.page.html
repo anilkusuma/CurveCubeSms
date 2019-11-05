@@ -1,0 +1,15 @@
+<div id="HomePage">
+    <app-home-header> </app-home-header>
+
+    <div id="main">
+        <app-home-navigation-bar> </app-home-navigation-bar>
+        <div class="home-page-router-content">
+            <div class="home-page-loaded-content" [hidden]="showRootPreloader">
+                <app-root-preloader> </app-root-preloader>
+            </div>
+            <div class="home-page-main-content" [hidden]="!showRootPreloader">
+                <router-outlet> </router-outlet>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,18 @@
+.material-input-field-root {
+    margin-bottom: 20px;
+}
+.material-input-field {
+    margin-top: 20px;
+    margin-bottom: 0px !important;
+}
+.material-input-field-root {
+    margin-bottom: 20px;
+}
+.material-input-field-root input {
+    margin : 0px !important;
+    box-shadow: none !important;
+}
+.material-input-field-root .error-container {
+    font-size: smaller;
+    color: #ce0000;
+}

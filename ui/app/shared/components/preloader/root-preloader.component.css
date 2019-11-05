@@ -1,0 +1,71 @@
+#RootPreloader {
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+    width: 100%;
+    height:100vh;
+}
+@keyframes preloader-interwind {
+    0%, 100% {
+        animation-timing-function: cubic-bezier(0.2, 0, 0.8, 1);
+    }
+    50% {
+        animation-timing-function: cubic-bezier(0, 0.2, 1, 0.8);
+    }
+    0% {
+        -webkit-transform: rotate(0deg) translate(0, -20px) scale(0);
+        transform: rotate(0deg) translate(0, -20px) scale(0);
+    }
+    50% {
+        -webkit-transform: rotate(180deg) translate(0, -20px) scale(1);
+        transform: rotate(180deg) translate(0, -20px) scale(1);
+    }
+    100% {
+        -webkit-transform: rotate(360deg) translate(0, -20px) scale(0);
+        transform: rotate(360deg) translate(0, -20px) scale(0);
+    }
+}
+@-webkit-keyframes preloader-interwind {
+    0%, 100% {
+        animation-timing-function: cubic-bezier(0.2, 0, 0.8, 1);
+    }
+    50% {
+        animation-timing-function: cubic-bezier(0, 0.2, 1, 0.8);
+    }
+    0% {
+        -webkit-transform: rotate(0deg) translate(0, -20px) scale(0);
+        transform: rotate(0deg) translate(0, -20px) scale(0);
+    }
+    50% {
+        -webkit-transform: rotate(180deg) translate(0, -20px) scale(1);
+        transform: rotate(180deg) translate(0, -20px) scale(1);
+    }
+    100% {
+        -webkit-transform: rotate(360deg) translate(0, -20px) scale(0);
+        transform: rotate(360deg) translate(0, -20px) scale(0);
+    }
+}
+div.root-preloader-interwind div {
+    position: absolute;
+    -webkit-animation: preloader-interwind 1.5s linear infinite;
+    animation: preloader-interwind 1.5s linear infinite;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: #2341d0;
+}
+div.root-preloader-interwind div:last-child {
+    -webkit-animation-delay: -0.75s;
+    animation-delay: -0.75s;
+    background: #ff499d;
+}
+.root-preloader-interwind {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px !important;
+    height: 100px !important;
+    -webkit-transform: translate(-100px, -100px) scale(1) translate(100px, 100px);
+    transform: translate(-100px, -100px) scale(1) translate(100px, 100px);
+}

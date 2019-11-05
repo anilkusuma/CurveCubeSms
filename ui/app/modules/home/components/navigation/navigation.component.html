@@ -1,0 +1,222 @@
+<div id="NavigationComponent">
+    <aside id="left-sidebar-nav">
+        <ul id="slide-out" class="sidenav side-nav sidenav-fixed z-depth-3 leftside-navigation">
+            <li class="user-details indigo darken-4">
+                <div class="row">
+                    <div class="col s4 m4 l4">
+                        <img src="/assets/images/dudp.jpg" id="userProfileImage" alt="" class="circle responsive-img valign profile-image">
+                    </div>
+                    <div class="col s8 m8 l8">
+                        <a class="btn-flat dropdown-button waves-effect waves-light white-text profile-btn" data-activates="profile-dropdown"><i class="mdi-navigation-arrow-drop-down right"></i>username</a>
+                        <ul id="profile-dropdown" class="dropdown-content">
+                            <li><a href="profile"><i class="mdi-action-account-circle"></i>Profile</a>
+                            </li>
+                            <li><a ng-click="logout()"><i class="mdi-hardware-keyboard-tab"></i>Logout</a>
+                            </li>
+                        </ul>
+                        <p class="user-roal">userRoal</p>
+                    </div>
+                </div>
+            </li>
+            <li class="no-padding" ng-if="userType || adminType || companyType">
+                <ul class="collapsible" data-collapsible="accordian">
+                    <li class="nav-li bold tracking-li">
+                        <a id="tracking" class="collapsible-header waves-effect waves-cyan"><i class="fa fa-map-marker-alt"></i>Tracking</a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li class="nav-li live-li active" ng-if="userType || adminType || companyType"><a href="live" id="liveTracking"><i class="fa fa-location-arrow"></i>Live</a>
+                                </li>
+                                <li class="nav-li history-li" ng-if="adminType || companyType"><a id="historyTracking" href="history"><i class="fa fa-history"></i>History</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li class="no-padding" ng-if="adminType || companyType">
+                <ul class="collapsible" data-collapsible="accordian">
+                    <li class="nav-li bold create-li">
+                        <a id="create" class="collapsible-header waves-effect waves-cyan"><i class="fa fa-plus"></i>Create</a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li class="nav-li vehicles-li bold" ng-if="adminType || companyType || userType">
+                                    <a id="vehicles" href="vehicles" class="waves-effect waves-cyan">
+                                        <i class="fa fa-bus"></i>Vehicles
+                                    </a>
+                                </li>
+                                <li class="nav-li students-li bold" ng-if="companyType ">
+                                    <a id="students" href="students" class="waves-effect waves-cyan">
+                                        <i class="fa fa-user-graduate"></i>Students
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li class="no-padding" ng-if="adminType || companyType">
+                <ul class="collapsible" data-collapsible="accordian">
+                    <li class="nav-li bold create-li">
+                        <a id="create" class="collapsible-header waves-effect waves-cyan"><i class="fa fa-plus"></i>Create</a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li class="nav-li vehicles-li bold" ng-if="adminType || companyType || userType">
+                                    <a id="vehicles" href="vehicles" class="waves-effect waves-cyan">
+                                        <i class="fa fa-bus"></i>Vehicles
+                                    </a>
+                                </li>
+                                <li class="nav-li students-li bold" ng-if="companyType ">
+                                    <a id="students" href="students" class="waves-effect waves-cyan">
+                                        <i class="fa fa-user-graduate"></i>Students
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li class="no-padding" ng-if="adminType || companyType">
+                <ul class="collapsible" data-collapsible="accordian">
+                    <li class="nav-li bold create-li">
+                        <a id="create" class="collapsible-header waves-effect waves-cyan"><i class="fa fa-plus"></i>Create</a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li class="nav-li vehicles-li bold" ng-if="adminType || companyType || userType">
+                                    <a id="vehicles" href="vehicles" class="waves-effect waves-cyan">
+                                        <i class="fa fa-bus"></i>Vehicles
+                                    </a>
+                                </li>
+                                <li class="nav-li students-li bold" ng-if="companyType ">
+                                    <a id="students" href="students" class="waves-effect waves-cyan">
+                                        <i class="fa fa-user-graduate"></i>Students
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li class="no-padding" ng-if="adminType || companyType">
+                <ul class="collapsible" data-collapsible="accordian">
+                    <li class="nav-li bold create-li">
+                        <a id="create" class="collapsible-header waves-effect waves-cyan"><i class="fa fa-plus"></i>Create</a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li class="nav-li vehicles-li bold" ng-if="adminType || companyType || userType">
+                                    <a id="vehicles" href="vehicles" class="waves-effect waves-cyan">
+                                        <i class="fa fa-bus"></i>Vehicles
+                                    </a>
+                                </li>
+                                <li class="nav-li students-li bold" ng-if="companyType ">
+                                    <a id="students" href="students" class="waves-effect waves-cyan">
+                                        <i class="fa fa-user-graduate"></i>Students
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li class="no-padding" ng-if="adminType || companyType">
+                <ul class="collapsible" data-collapsible="accordian">
+                    <li class="nav-li bold create-li">
+                        <a id="create" class="collapsible-header waves-effect waves-cyan"><i class="fa fa-plus"></i>Create</a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li class="nav-li vehicles-li bold" ng-if="adminType || companyType || userType">
+                                    <a id="vehicles" href="vehicles" class="waves-effect waves-cyan">
+                                        <i class="fa fa-bus"></i>Vehicles
+                                    </a>
+                                </li>
+                                <li class="nav-li students-li bold" ng-if="companyType ">
+                                    <a id="students" href="students" class="waves-effect waves-cyan">
+                                        <i class="fa fa-user-graduate"></i>Students
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li class="no-padding" ng-if="adminType || companyType">
+                <ul class="collapsible" data-collapsible="accordian">
+                    <li class="nav-li bold create-li">
+                        <a id="create" class="collapsible-header waves-effect waves-cyan"><i class="fa fa-plus"></i>Create</a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li class="nav-li vehicles-li bold" ng-if="adminType || companyType || userType">
+                                    <a id="vehicles" href="vehicles" class="waves-effect waves-cyan">
+                                        <i class="fa fa-bus"></i>Vehicles
+                                    </a>
+                                </li>
+                                <li class="nav-li students-li bold" ng-if="companyType ">
+                                    <a id="students" href="students" class="waves-effect waves-cyan">
+                                        <i class="fa fa-user-graduate"></i>Students
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li class="no-padding" ng-if="adminType || companyType">
+                <ul class="collapsible" data-collapsible="accordian">
+                    <li class="nav-li bold create-li">
+                        <a id="create" class="collapsible-header waves-effect waves-cyan"><i class="fa fa-plus"></i>Create</a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li class="nav-li vehicles-li bold" ng-if="adminType || companyType || userType">
+                                    <a id="vehicles" href="vehicles" class="waves-effect waves-cyan">
+                                        <i class="fa fa-bus"></i>Vehicles
+                                    </a>
+                                </li>
+                                <li class="nav-li students-li bold" ng-if="companyType ">
+                                    <a id="students" href="students" class="waves-effect waves-cyan">
+                                        <i class="fa fa-user-graduate"></i>Students
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li class="no-padding" ng-if="adminType || companyType">
+                <ul class="collapsible" data-collapsible="accordian">
+                    <li class="nav-li bold reports-li">
+                        <a id="reprots" class="collapsible-header waves-effect waves-cyan"><i class="mdi-editor-insert-chart"></i>Reports</a>
+                        <div class="collapsible-body" style="display:none">
+                            <ul>
+                                <li class="nav-li dayreport-li" ng-if="adminType || companyType || userType"><a id="dailyReports" href="/reports/general" class="waves-effect waves-cyan">General Day Report</a>
+                                </li>
+                                <li class="nav-li detaildayreport-li" ng-if="adminType || companyType || userType"><a id="detailDetailReports" href="/reports/detail" class="waves-effect waves-cyan" >Detailed Day Report</a>
+                                </li>
+                                <li class="nav-li stoppagereport-li" ng-if="adminType || companyType || userType" ><a id="stoppageReports" href="reports/stoppage" class="waves-effect waves-cyan">Stoppage Report</a>
+                                </li>
+                                <li class="nav-li distancereports-li" ng-if="adminType || companyType || userType"><a id="distanceReports" href="/reports/distance" class="waves-effect waves-cyan">Distance Report</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-li settings-li bold" ng-if="adminType || companyType ">
+                <a id="settings" href="/settings" class="waves-effect waves-cyan">
+                    <i class="fa fa-pencil"></i>Settings
+                </a>
+            </li>
+            <li class="li-hover"><div class="divider"></div></li>
+            <li class="li-hover"><p class="ultra-small margin more-text">PAGON</p></li>
+            <li><a href="http://www.pagon.in" target="_blank"><i class="mdi-action-info"></i>About</a>
+            </li>
+            <li><a href="help"><i class="mdi-action-help"></i>Help</a>
+            </li>
+            <li><a href="reportBug"><i class="mdi-action-bug-report"></i>Report Bug</a>
+            </li>
+            <li><a href="https://play.google.com/store/apps/details?id=apps.curvecube.vts" target="_blank"><i class="mdi-file-cloud-download"></i>Download App</a>
+            </li>
+        </ul>
+        <a href="#" data-target="slide-out" class="sidenav-trigger btn-floating btn-medium waves-effect waves-light hide-on-large-only indigo darken-4">
+            <i class="fas fa-bars"></i>
+        </a>
+    </aside>
+</div>

@@ -1,0 +1,22 @@
+{
+    "name": "Vehicle",
+    "base": "PersistedModel",
+    "idInjection": true,
+    "options": {
+        "validateUpsert": true
+    },
+    "mongodb":{
+        "collection":"Vehicle"
+    },
+    "properties": {
+        "vehicleId": {
+            "id":true,
+            "type": "String",
+            "required": false
+        }
+    },
+    "validations": [],
+    "relations": {},
+    "acls": [],
+    "methods": {}
+}

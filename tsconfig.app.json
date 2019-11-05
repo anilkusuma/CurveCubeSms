@@ -1,0 +1,25 @@
+{
+    "extends": "./tsconfig.json",
+    "compilerOptions": {
+        "outDir": "./out-tsc/app",
+        "types": [],
+        "resolveJsonModule": true,
+        "paths": {
+            "@app/core/*" : ["app/core/*"],
+            "@approot/*" : ["app/*"],
+            "@app/shared/*" : ["app/shared/*"],
+            "@root/*" : ["app/modules/root/*"]
+        }
+    },
+    "files": [
+        "ui/main.ts",
+        "ui/polyfills.ts"
+    ],
+    "include": [
+        "ui/**/*.ts"
+    ],
+    "exclude": [
+        "ui/test.ts",
+        "ui/**/*.spec.ts"
+    ]
+}

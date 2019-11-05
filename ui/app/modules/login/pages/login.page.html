@@ -1,0 +1,25 @@
+<div id="LoginPage">
+    <section class="login-section">
+        <div class="card login-div">
+            <div class="pagon-logo login-logo">
+                <img src="./assets/images/pagon-logo-title.png" alt="Pagon logo">
+            </div>
+            <div class="login-input-divs-container">
+                <app-material-input-field [(input)]="userNameInput" > </app-material-input-field>
+
+                <app-material-input-field [(input)]="passwordInput" > </app-material-input-field>
+
+                <div class="remember-me-div">
+                    <label for="rememberMe">
+                        <input type="checkbox" class="filled-in"  name="rememberMe" id="rememberMe" [(ngModel)]="rememberMe"/>
+                        <span>Remember me</span>
+                    </label>
+                </div>
+
+                <div class="login-button-div">
+                    <button class="btn login-button" type="button" (click)="login()">Login</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
