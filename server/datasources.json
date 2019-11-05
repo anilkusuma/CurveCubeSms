@@ -1,0 +1,17 @@
+{
+    "db": {
+        "name": "db",
+        "connector": "memory"
+    },
+    "CurveCubeSms": {
+        "host": "localhost",
+        "port": 27017,
+        "user": "anilkusuma",
+        "password": "anilkusuma",
+        "authSource" : "admin",
+        "database": "CurveCubeSms",
+        "name": "CurveCubeSms",
+        "connector": "mongodb",
+        "useNewUrlParser": true
+    }
+}
